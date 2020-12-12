@@ -112,7 +112,7 @@ beforeCreate: function(){
 body {
   margin: 0 0 0 0;
   background-color: #19191a;
-  background-image: url("./assets/lena.jpg");
+  /*background-image: url("./assets/carnep.jpg");*/
   background-size: 100%;
   overflow: hidden;
 }
@@ -133,29 +133,35 @@ body {
 table, th, td {
   border: 1px solid black;
 }
-.header h1{
-width: 100%;
-text-align: center;
+.header h1 {
+  width: 20%;
+  text-align: center;
+  font-size: 1.9em;
+}
+.header img {
+  width: 8%;
+  margin-left: 3em;
+  justify-content: space-around;
 }
 .header nav {
-height: 100%;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-font-size: 20px;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1em;
 }
-.header nav button{
-color: #E5E7E9;
-background: #283747;
-border: 1px solid #E5E7E9;
-border-radius: 5px;
-padding: 10px 20px;
+.header nav button {
+  color: #19191a;
+  background: #f5a018;
+  border: 1px solid #e5e7e9;
+  border-radius: 5px;
+  padding: 10px 20px;
 }
-.header nav button:hover{
-color: #283747;
-background: #E5E7E9;
-border: 1px solid #E5E7E9;
+.header nav button:hover {
+  color: #19191a;
+  background: #e5e7e9;
+  border: 1px solid #e5e7e9;
 }
 .main-component{
 height: 75vh;
@@ -164,20 +170,34 @@ padding: 0%;
 background: #fcfafa ;
 } 
 
-.footer{
-margin: 0;
-padding: 0;
-width: 100%;
-height: 10vh;
-min-height: 100px;
-background-color: #d6b629;
-color: #E5E7E9;
+.footer {
+  margin: 0;
+  padding: 4%;
+  width: 100%;
+  height: 50%;
+  min-height: 100px;
+  background-color: #19191a;
+  color: #f5a018;
+  border-top: 1px solid #f5a018;
+  position: fixed;
+  display: flex;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.footer h2{
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+.footer h2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer p {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  justify-items: center;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.8em;
 }
 </style>
