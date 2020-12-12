@@ -16,7 +16,7 @@
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
     <center>
-      <h2>Asados <br />Módulo de inventario</h2><br><br>
+      <h2>Módulo de inventario</h2><br><br>
      <div style='text-align:left'>
       <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
@@ -177,7 +177,7 @@ background: #fcfafa ;
   padding: 4%;
   width: 100%;
   height: 20%;
-  min-height: 100px;
+  min-height: 40px;
   background-color: #19191a;
   color: #f5a018;
   border-top: 1px solid #f5a018;
