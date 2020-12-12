@@ -16,7 +16,7 @@
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
     <center>
-      <h2>Módulo de inventario</h2><br><br>
+      <h2>Módulo de inventario</h2>
      <div style='text-align:left'>
       <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
