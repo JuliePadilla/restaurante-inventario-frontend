@@ -15,6 +15,8 @@
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
+    <center>
+      <h2>Asados <br />Carbón de Leña</h2><br><br>
      <div style='text-align:left'>
       <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
@@ -24,6 +26,7 @@
         <button v-if="is_auth" >Salir</button><br>
       </left>
     </div style='text-align:left'>
+     
      <center>
      <form action="/action_page.php">
       <label for="idprod">Id producto:</label>
@@ -62,8 +65,7 @@
     <td></td>
   </tr>
 </table>
-  </center>
-    </div>
+
     <div class="footer">
       <p>
         Calle 48 # 27-01. Barrancabermeja, Colombia<br />
