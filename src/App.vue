@@ -109,25 +109,31 @@ beforeCreate: function(){
 </script>
 
 <style>
-body{
-margin: 0 0 0 0;
+body {
+  margin: 0 0 0 0;
+  background-color: #19191a;
+  background-image: url("./assets/lena.jpg");
+  background-size: 100%;
+  overflow: hidden;
 }
-.header{
-margin: 0%;
-padding: 0;
-width: 100%;
-height: 10vh;
-min-height: 100px;
-background-color: #d6b629 ;
-color:#E5E7E9 ;
-display: flex;
-justify-content: center;
-align-items: center;
+.header {
+  margin: 0%;
+  padding: 0;
+  width: 100%;
+  height: 10vh;
+  min-height: 100px;
+  background-color: #19191a;
+  color: #f5a018;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f5a018;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 table, th, td {
   border: 1px solid black;
 }
-/*.header h1{
+.header h1{
 width: 100%;
 text-align: center;
 }
@@ -150,7 +156,7 @@ padding: 10px 20px;
 color: #283747;
 background: #E5E7E9;
 border: 1px solid #E5E7E9;
-}*/
+}
 .main-component{
 height: 75vh;
 margin: 0%;
