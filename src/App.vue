@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Carbón de Leña</h1>
-      <h2>Módulo de Inventario</h2><br>
+      <h1>Carbón de Leña</h1><br>
+      <h2>Módulo de Inventario</h2>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
         <button v-on:click="getBalance" v-if="is_auth" > Cliente </button>
@@ -14,19 +14,30 @@
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
+      <div>
+      <right>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
         <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
         <button v-if="is_auth" > Actualizar </button>
         <button v-if="is_auth" >Eliminar</button>
-        <button v-if="is_auth" >Salir</button>
+        <button v-if="is_auth" >Salir</button><br>
+      </right>
+      </div>
      <center>
      <form action="/action_page.php">
       <label for="idprod">Id producto:</label>
       <input type="text" id="idprod" name="idprod" value="">
       <label for="nomprod">Nombre:</label>
-      <input type="text" id="nomprod" name="nomprod" value="">
-      <input type="submit" value="Ingresar">
-      <input type="submit" value="Olvidó su contraseña">
+      <input type="text" id="nomprod" name="nomprod" value=""><br>
+      <label for="precprod">precio:</label>
+      <input type="text" id="precprod" name="precprod" value="">
+      <label for="cantprod">cantidad:</label>
+      <input type="text" id="cantprod" name="cantprod" value="">
+      <label for="catprod">categoría:</label>
+      <input type="text" id="catprod" name="catprod" value="">
+
+      <!--<input type="submit" value="Ingresar">
+      <input type="submit" value="Olvidó su contraseña">-->
     </form>
   </center>
     </div>
@@ -87,12 +98,12 @@ justify-content: space-between;
 align-items: center;
 }
 .header h1{
-width: 50%;
+width: 100%;
 text-align: center;
 }
 .header nav {
 height: 100%;
-width: 45%;
+width: 100%;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -114,7 +125,7 @@ border: 1px solid #E5E7E9;
 height: 75vh;
 margin: 0%;
 padding: 0%;
-background: #FDFEFE ;
+background: #0c0c0c ;
 } 
 
 .footer{
