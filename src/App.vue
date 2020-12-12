@@ -93,7 +93,7 @@ this.$router.push({name: "user", params:{username:username}})
 }
 },
 getProducto: function(){
-if(this.$route.name != "Inventario"){
+if(this.$route.name != "producto"){
 let username = localStorage.getItem("current_username")
 this.$router.push({name:"producto", params:{username:username}
 })
