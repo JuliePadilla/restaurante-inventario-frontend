@@ -110,92 +110,92 @@ beforeCreate: function(){
 </script>
 
 <style>
-body {
-  margin: 0 0 0 0;
-  background-color: #19191a;
-  /*background-image: url("./assets/carnep.jpg");*/
-  background-size: 100%;
-  overflow: hidden;
-}
-.header {
-  margin: 0%;
-  padding: 0;
-  width: 100%;
-  height: 10vh;
-  min-height: 100px;
-  background-color: #19191a;
-  color: #f5a018;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #f5a018;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-}
-table, th, td {
-  border: 1px solid black;
-}
-.header h1 {
-  width: 20%;
-  text-align: center;
-  font-size: 1.9em;
-}
-.header img {
-  width: 8%;
-  margin-left: 3em;
-  justify-content: space-around;
-}
-.header nav {
-  height: 100%;
-  width: 45%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 1em;
-}
-.header nav button {
-  color: #19191a;
-  background: #f5a018;
-  border: 1px solid #e5e7e9;
-  border-radius: 5px;
-  padding: 10px 20px;
-}
-.header nav button:hover {
-  color: #19191a;
-  background: #e5e7e9;
-  border: 1px solid #e5e7e9;
-}
-.main-component{
-height: 75vh;
-margin: 0%;
-padding: 0%;
-background: #fcfafa ;
-} 
+  body {
+    margin: 0 0 0 0;
+    background-color: #19191a;
+    /*background-image: url("./assets/carnep.jpg");*/
+    background-size: 100%;
+    overflow: hidden;
+  }
+  .header {
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    min-height: 100px;
+    background-color: #19191a;
+    color: #f5a018;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f5a018;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  .header h1 {
+    width: 20%;
+    text-align: center;
+    font-size: 1.9em;
+  }
+  .header img {
+    width: 8%;
+    margin-left: 3em;
+    justify-content: space-around;
+  }
+  .header nav {
+    height: 100%;
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1em;
+  }
+  .header nav button {
+    color: #19191a;
+    background: #f5a018;
+    border: 1px solid #e5e7e9;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  .header nav button:hover {
+    color: #19191a;
+    background: #e5e7e9;
+    border: 1px solid #e5e7e9;
+  }
+  .main-component{
+    height: 75vh;
+    margin: 0%;
+    padding: 0%;
+    background: #fcfafa ;
+  } 
 
-.footer {
-  margin: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 100px;
-  background-color: #19191a;
-  color: #f5a018;
-  border-top: 1px solid #f5a018;
-  position: fixed;
-  display: flex;
-  overflow: hidden;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.footer h2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.footer p {
-  width: 100%;
-  justify-content: center;
-  justify-items: center;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 0.8em;
-}
+  .footer {
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    background-color: #19191a;
+    color: #f5a018;
+    border-top: 1px solid #f5a018;
+    position: fixed;
+    display: flex;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .footer h2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer p {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+  }
 </style>

@@ -18,8 +18,8 @@ const router = new vueRouter({
             component: User
             },
             {
-            path: '/producto/:username',
-            name: "producto",
+            path: '/inventario/:username',
+            name: "inventario",
             component: Inventario
             },
             ]
