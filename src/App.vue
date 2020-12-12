@@ -65,7 +65,7 @@
     <td></td>
   </tr>
 </table>-->
-
+</div>
     <div class="footer">
       <p>
         Calle 48 # 27-01. Barrancabermeja, Colombia<br />
