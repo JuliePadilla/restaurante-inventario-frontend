@@ -2,6 +2,7 @@
   <div id="app">
     <div class="header">
       <h1>Carbón de Leña</h1>
+      <h2>Módulo de Inventario</h2><br>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
         <button v-on:click="getBalance" v-if="is_auth" > Cliente </button>
@@ -13,13 +14,17 @@
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
-    
+        <button v-on:click="init" v-if="is_auth" > Crear </button>
+        <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
+        <button v-if="is_auth" > Actualizar </button>
+        <button v-if="is_auth" >Eliminar</button>
+        <button v-if="is_auth" >Salir</button>
      <center>
      <form action="/action_page.php">
-      <label for="fname">Usuario:</label><br>
-      <input type="text" id="fname" name="fname" value=""><br>
-      <label for="lname">Contraseña:</label><br>
-      <input type="text" id="lname" name="lname" value=""><br><br>
+      <label for="idprod">Id producto:</label>
+      <input type="text" id="idprod" name="idprod" value="">
+      <label for="nomprod">Nombre:</label>
+      <input type="text" id="nomprod" name="nomprod" value="">
       <input type="submit" value="Ingresar">
       <input type="submit" value="Olvidó su contraseña">
     </form>
