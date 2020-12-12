@@ -3,18 +3,16 @@
     <div class="header">
       <h1>Carbón de Leña</h1>
       <nav>
-        <button v-on:click="init" v-if="is_auth" > Inicio </button>
+        <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
         <button v-on:click="getBalance" v-if="is_auth" > Cliente </button>
         <button v-if="is_auth" > Inventario </button>
-        <button v-if="is_auth" >Ventas</button>
+        <button v-if="is_auth" >Ventas</button>-->
       </nav>
     </div>
     <div class="main-component">
       <!--<router-view></router-view>-->
-    
-      <img src="./assets/lena1.jpg" alt="fondo" 
-        width="700"
-        height="300">
+
+      <!--<img src="./assets/lena1.jpg" alt="fondo">-->
     
      <center>
      <form action="/action_page.php">
@@ -77,14 +75,14 @@ padding: 0;
 width: 100%;
 height: 10vh;
 min-height: 100px;
-background-color: #283747 ;
+background-color: #d6b629 ;
 color:#E5E7E9 ;
 display: flex;
 justify-content: space-between;
 align-items: center;
 }
 .header h1{
-width: 20%;
+width: 50%;
 text-align: center;
 }
 .header nav {
@@ -112,10 +110,6 @@ height: 75vh;
 margin: 0%;
 padding: 0%;
 background: #FDFEFE ;
-}
-
-.main-component.form{ 
-    text-align: center; 
 } 
 
 .footer{
@@ -124,7 +118,7 @@ padding: 0;
 width: 100%;
 height: 10vh;
 min-height: 100px;
-background-color: #283747;
+background-color: #d6b629;
 color: #E5E7E9;
 }
 .footer h2{
