@@ -176,6 +176,7 @@ background: #fcfafa ;
   margin: 0;
   bottom: 0;
   width: 100%;
+  height: 50%;
   min-height: 100px;
   background-color: #19191a;
   color: #f5a018;
