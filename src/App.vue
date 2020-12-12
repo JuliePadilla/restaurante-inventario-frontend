@@ -6,7 +6,7 @@
       <nav>
         <button v-on:click="init" v-if="is_auth">Inicio</button>
         <button v-on:click="getCliente" v-if="is_auth">Cliente</button>
-        <button v-if="is_auth">Inventario</button>
+        <button v-on:click="getProducto" v-if="is_auth">Inventario</button>
         <button v-if="is_auth">Ventas</button>
         <button v-if="is_auth">Cerrar Sesión</button>
       </nav>
@@ -92,11 +92,10 @@ let username = localStorage.getItem("current_username")
 this.$router.push({name: "user", params:{username:username}})
 }
 },
-getBalance: function(){
-if(this.$route.name != "user_balance"){
+getProducto: function(){
+if(this.$route.name != "Inventario"){
 let username = localStorage.getItem("current_username")
-this.$router.push({ name:"user_balance",
-params:{username:username}
+this.$router.push({name:"producto", params:{username:username}
 })
 }
 },
