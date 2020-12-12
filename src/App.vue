@@ -177,21 +177,21 @@ background: #fcfafa ;
   background-color: #19191a;
   color: #f5a018;
   border-top: 1px solid #f5a018;
-  position: fixed;
+  position: static;
   display: flex;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 .footer h2 {
   width: 100%;
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer p {
   width: 100%;
-  height: 100%;
+  height: 50%;
   justify-content: center;
   justify-items: center;
   vertical-align: middle;
