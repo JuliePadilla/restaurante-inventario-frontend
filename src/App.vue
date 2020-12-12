@@ -1,27 +1,29 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Módulo de inventario</h1>
+      <img src="./assets/logo_carb.png" />
+      <h1>Asados <br />Carbón de Leña</h1>
       <nav>
-        <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
-        <button v-on:click="getBalance" v-if="is_auth" > Cliente </button>
-        <button v-if="is_auth" > Inventario </button>
-        <button v-if="is_auth" >Ventas</button>-->
+        <button v-on:click="init" v-if="is_auth">Inicio</button>
+        <button v-on:click="getCliente" v-if="is_auth">Cliente</button>
+        <button v-if="is_auth">Inventario</button>
+        <button v-if="is_auth">Ventas</button>
+        <button v-if="is_auth">Cerrar Sesión</button>
       </nav>
     </div>
     <div class="main-component">
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
-     <div style='text-align:right'>
-      <right>
+     <div style='text-align:left'>
+      <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
         <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
         <button v-if="is_auth" > Actualizar </button>
         <button v-if="is_auth" >Eliminar</button>
         <button v-if="is_auth" >Salir</button><br>
-      </right>
-    </div style='text-align:right'>
+      </left>
+    </div style='text-align:left'>
      <center>
      <form action="/action_page.php">
       <label for="idprod">Id producto:</label>
@@ -63,7 +65,11 @@
   </center>
     </div>
     <div class="footer">
-      <h2>Carbón de leña</h2>
+      <p>
+        Calle 48 # 27-01. Barrancabermeja, Colombia<br />
+        Teléfonos: +57 323 590 9805 - 6220238 - 6021901<br />
+        E-mail: carbonlena@hotmail.com
+      </p>
     </div>
   </div>
 </template>
