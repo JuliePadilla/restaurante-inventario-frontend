@@ -2,15 +2,12 @@
     <div id="Cliente">
         <h2 style='text-align:center'>MÓDULO DE INVENTARIOS</h2>
         <h2 id="11" value=""></h2>
-        <center>
-      <h2>Módulo de inventario</h2>
      <div style='text-align:left'>
       <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
         <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
         <button v-if="is_auth" > Actualizar </button>
         <button v-if="is_auth" >Eliminar</button>
-        <button v-if="is_auth" >Salir</button><br>
       </left>
     </div style='text-align:left'>
      
@@ -27,7 +24,7 @@
       <label for="catprod">categoría:</label>
       <input type="text" id="catprod" name="catprod" value=""><br><br>
  
-      <input type="submit" value="Mostrar Lista de productos">
+      <button v-if="is_auth" >Mostrar lista de productos</button><br>
     </form>
     <br>
     <div>
@@ -59,16 +56,14 @@
 
 import axios from "axios";
 export default {
-    name: "Cliente",
+    name: "Inventario",
     data: function () {
         return {
-            telefono: 0,
+            id: "",
             nombre: "",
-            direccion: "",
-            barrio: "",
-            cedula: 0,
-            cumpleanos: "",
-            balance: 0,
+            precio: 0,
+            cantidad: 0,
+            categoria: "",
         };
     },
 
@@ -179,32 +174,22 @@ export default {
 </script>
 
 <style>
-#UserBalance {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#UserBalance h2 {
-    font-size: 50px;
-    color: #283747;
-}
-#UserBalance span {
-    color: crimson;
-    font-weight: bold;
-}
-button{
-    color: #000000;
-    background: #f5a018;
-    border: 1px solid #007efc;
-    border-radius: 5px;
-    padding: 10px 20px;
-}
-button:hover{
-    color: #000000;
-    background: #7fbfff;
-    border: 1px solid #358035;
-}
+#Inventario body {
+    margin: 0 0 0 0;
+    background-color: #19191a;
+    /*background-image: url("./assets/carnep.jpg");*/
+    background-size: 100%;
+    overflow: hidden;
+  }
+
+  #Inventario table, th, td {
+    border: 1px solid black;
+  }
+
+  #Inventario .main-component{
+    height: 75vh;
+    margin: 0%;
+    padding: 0%;
+    background: #fcfafa ;
+  } 
 </style>
