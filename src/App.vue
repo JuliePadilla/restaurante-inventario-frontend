@@ -1,8 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Carbón de Leña</h1>
-      <h2>Módulo de Inventario</h2>
+      <h1>Módulo de inventario</h1>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
         <button v-on:click="getBalance" v-if="is_auth" > Cliente </button>
@@ -64,7 +63,7 @@
   </center>
     </div>
     <div class="footer">
-      <h2>Productos</h2>
+      <h2>Carbón de leña</h2>
     </div>
   </div>
 </template>
