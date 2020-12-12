@@ -118,6 +118,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+table, th, td {
+  border: 1px solid black;
+}
 /*.header h1{
 width: 100%;
 text-align: center;
