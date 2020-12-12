@@ -94,7 +94,7 @@ min-height: 100px;
 background-color: #d6b629 ;
 color:#E5E7E9 ;
 display: flex;
-justify-content: space-between;
+justify-content: center;
 align-items: center;
 }
 .header h1{
