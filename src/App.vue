@@ -38,7 +38,8 @@
  
       <input type="submit" value="Mostrar Lista de productos">
     </form>
-
+    <br>
+    <div>
     <table style="width:100%">
   <tr>
     <th>Id</th>
