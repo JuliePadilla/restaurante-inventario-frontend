@@ -10,7 +10,7 @@
       </nav>
     </div>
     <div class="main-component">
-      <router-view></router-view>
+      <!--<router-view></router-view>-->
     
       <img src="./assets/lena1.jpg" alt="fondo" 
         width="700"
