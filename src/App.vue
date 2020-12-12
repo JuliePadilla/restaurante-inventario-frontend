@@ -97,7 +97,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
-.header h1{
+/*.header h1{
 width: 100%;
 text-align: center;
 }
@@ -120,7 +120,7 @@ padding: 10px 20px;
 color: #283747;
 background: #E5E7E9;
 border: 1px solid #E5E7E9;
-}
+}*/
 .main-component{
 height: 75vh;
 margin: 0%;
