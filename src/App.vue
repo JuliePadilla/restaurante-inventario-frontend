@@ -11,16 +11,11 @@
     </div>
     <div class="main-component">
       <router-view></router-view>
-
-    <center>
-      <img src="./assets/restaurante.jpg" alt="fondo" 
-    width="700"
-     height="300">
-    <img src="./assets/restaurante.jpg" alt="logo" 
-    width="700"
-     height="300">
-    </center>
-
+    
+      <img src="./assets/lena1.jpg" alt="fondo" 
+        width="700"
+        height="300">
+    
      <center>
      <form action="/action_page.php">
       <label for="fname">Usuario:</label><br>
