@@ -174,9 +174,8 @@ background: #fcfafa ;
 
 .footer {
   margin: 0;
-  padding:5%;
+  bottom: 0;
   width: 100%;
-  height: 50%;
   min-height: 100px;
   background-color: #19191a;
   color: #f5a018;
