@@ -1,54 +1,55 @@
 <template>
-    <div id="Cliente">
+    <div id="Inventario">
         <h2 style='text-align:center'>MÓDULO DE INVENTARIOS</h2>
         <h2 id="11" value=""></h2>
-     <div style='text-align:left'>
-      <left>
-        <button v-on:click="init" v-if="is_auth" > Crear </button>
-        <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
-        <button v-if="is_auth" > Actualizar </button>
-        <button v-if="is_auth" >Eliminar</button>
-      </left>
-    </div style='text-align:left'>
+        <div style='text-align:left'>
+            <left>
+                <button v-on:click="init" v-if="is_auth" > Crear </button>
+                <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
+                <button v-if="is_auth" > Actualizar </button>
+                <button v-if="is_auth" >Eliminar</button>
+            </left>
      
-     <center>
-     <form action="/action_page.php">
-      <label for="idprod">Id producto:</label>
-      <input type="text" id="idprod" name="idprod" value="">
-      <label for="nomprod">Nombre:</label>
-      <input type="text" id="nomprod" name="nomprod" value=""><br><br>
-      <label for="precprod">precio:</label>
-      <input type="text" id="precprod" name="precprod" value="">
-      <label for="cantprod">cantidad:</label>
-      <input type="text" id="cantprod" name="cantprod" value="">
-      <label for="catprod">categoría:</label>
-      <input type="text" id="catprod" name="catprod" value=""><br><br>
- 
-      <button v-if="is_auth" >Mostrar lista de productos</button><br>
-    </form>
-    <br>
-    <div>
+        <center>
+            <form action="/action_page.php">
+                <label for="idprod">Id producto:</label>
+                <input type="text" id="idprod" name="idprod" value="">
+                <label for="nomprod">Nombre:</label>
+                <input type="text" id="nomprod" name="nomprod" value=""><br><br>
+                <label for="precprod">precio:</label>
+                <input type="text" id="precprod" name="precprod" value="">
+                <label for="cantprod">cantidad:</label>
+                <input type="text" id="cantprod" name="cantprod" value="">
+                <label for="catprod">categoría:</label>
+                <input type="text" id="catprod" name="catprod" value=""><br><br>
+            
+                <button v-if="is_auth" >Mostrar lista de productos</button><br>
+            </form>
+        </center>
+        <br>
+    </div>
+
     <table style="width:100%">
-  <tr>
-    <th>Id</th>
-    <th>Nombre</th>
-    <th>Precio</th>
-    <th>Cantidad</th>
-    <th>Categoría</th>
-  </tr>
-  <tr>
-    <td>CA01</td>
-    <td>Carne asada</td>
-    <td>17000</td>
-    <td>15</td>
-    <td>Carnes</td>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+        <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Categoría</th>
+        </tr>
+        <tr>
+            <td>CA01</td>
+            <td>Carne asada</td>
+            <td>17000</td>
+            <td>15</td>
+            <td>Carnes</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
 </template>
 
