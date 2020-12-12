@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <img src="./assets/logo_carb.png" />
+      <!--<img src="./assets/logo_carb.png" />-->
       <h1>Asados <br />Carbón de Leña</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth">Inicio</button>
