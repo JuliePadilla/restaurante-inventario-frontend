@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Carbón de Leña</h1><br>
+      <h1>Carbón de Leña</h1><div>
       <h2>Módulo de Inventario</h2>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
@@ -14,7 +14,7 @@
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
-      <div>
+     
       <right>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
         <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
@@ -22,7 +22,7 @@
         <button v-if="is_auth" >Eliminar</button>
         <button v-if="is_auth" >Salir</button><br>
       </right>
-      </div>
+    
      <center>
      <form action="/action_page.php">
       <label for="idprod">Id producto:</label>
@@ -125,7 +125,7 @@ border: 1px solid #E5E7E9;
 height: 75vh;
 margin: 0%;
 padding: 0%;
-background: #0c0c0c ;
+background: #fcfafa ;
 } 
 
 .footer{
