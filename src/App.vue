@@ -14,7 +14,7 @@
       <!--<router-view></router-view>-->
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
-     
+     <div>
       <right>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
         <button v-on:click="getBalance" v-if="is_auth" > Buscar </button>
@@ -22,7 +22,7 @@
         <button v-if="is_auth" >Eliminar</button>
         <button v-if="is_auth" >Salir</button><br>
       </right>
-    
+    </div>
      <center>
      <form action="/action_page.php">
       <label for="idprod">Id producto:</label>
@@ -34,10 +34,10 @@
       <label for="cantprod">cantidad:</label>
       <input type="text" id="cantprod" name="cantprod" value="">
       <label for="catprod">categoría:</label>
-      <input type="text" id="catprod" name="catprod" value="">
+      <input type="text" id="catprod" name="catprod" value=""><br>
 
-      <!--<input type="submit" value="Ingresar">
-      <input type="submit" value="Olvidó su contraseña">-->
+      <input type="submit" value="Guardar">
+      <input type="submit" value="Mostrar Lista">
     </form>
   </center>
     </div>
