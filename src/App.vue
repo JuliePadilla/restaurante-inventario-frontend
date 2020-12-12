@@ -12,10 +12,10 @@
       </nav>
     </div>
     <div class="main-component">
-      <!--<router-view></router-view>-->
+      <router-view></router-view>
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
-    <center>
+    <!--<center>
       <h2>Módulo de inventario</h2>
      <div style='text-align:left'>
       <left>
@@ -64,7 +64,7 @@
     <td></td>
     <td></td>
   </tr>
-</table>
+</table>-->
 
     <div class="footer">
       <p>
@@ -101,10 +101,10 @@ this.$router.push({name:"producto", params:{username:username}
 },
 },
 beforeCreate: function(){
-  localStorage.setItem('current_username', 'camilo24')
+  localStorage.setItem('current_username', 'Admin')
   localStorage.setItem('isAuth', true)
 
-  this.$router.push({name:"user",params:{username:'camilo24'}})
+  this.$router.push({name:"user",params:{username:'Admin'}})
 }
 }
 </script>

@@ -1,28 +1,27 @@
 import vueRouter from 'vue-router'
-
 import User from './components/User'
-import UserBalance from './components/UserBalance'
 import App from './App'
+import Inventario from './components/Inventario'
 
 const router = new vueRouter({
     mode: 'history',
     base: __dirname,
     routes: [
-    {
-    path: '/',
-    name: "root",
-    component: App
-    },
-    {
-        path: '/user/:username',
-        name: "user",
-        component: User
+        {
+        path: '/',
+        name: "root",
+        component: App
         },
         {
-        path: '/user/balance/:username',
-        name: "user_balance",
-        component: UserBalance
-        },
-        ]
-        })
-        export default router
+            path: '/user/:username',
+            name: "user",
+            component: User
+            },
+            {
+            path: '/producto/:username',
+            name: "producto",
+            component: Inventario
+            },
+            ]
+            })
+export default router
