@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Carbón de Leña</h1><br>
+      <h1>Carbón de Leña</h1><br><br>
       <h2>Módulo de Inventario</h2>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
