@@ -174,7 +174,7 @@ background: #fcfafa ;
 
 .footer {
   margin: 0;
-  padding:0%;
+  padding:5%;
   width: 100%;
   height: 50%;
   min-height: 100px;
