@@ -28,13 +28,13 @@
       <label for="idprod">Id producto:</label>
       <input type="text" id="idprod" name="idprod" value="">
       <label for="nomprod">Nombre:</label>
-      <input type="text" id="nomprod" name="nomprod" value=""><br>
+      <input type="text" id="nomprod" name="nomprod" value=""><br><br>
       <label for="precprod">precio:</label>
       <input type="text" id="precprod" name="precprod" value="">
       <label for="cantprod">cantidad:</label>
       <input type="text" id="cantprod" name="cantprod" value="">
       <label for="catprod">categoría:</label>
-      <input type="text" id="catprod" name="catprod" value=""><br>
+      <input type="text" id="catprod" name="catprod" value=""><br><br>
 
       <input type="submit" value="Guardar">
       <input type="submit" value="Mostrar Lista">
