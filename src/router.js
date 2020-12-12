@@ -17,11 +17,11 @@ const router = new vueRouter({
             name: "user",
             component: User
             },
-            {
+        {
             path: '/inventario/:username',
             name: "inventario",
             component: Inventario
             },
             ]
-            })
+        })
 export default router

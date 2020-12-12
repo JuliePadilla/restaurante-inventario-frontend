@@ -52,7 +52,7 @@
 
 </template>
 
-<script>
+<!--<script>
 
 import axios from "axios";
 export default {
@@ -78,7 +78,7 @@ export default {
         findCliente: function () {
             this.telefono = document.getElementById("Phone").value
             let self = this
-            axios.get("https://restaurante-back-g1.herokuapp.com/cliente/consulta/" + this.telefono)
+            axios.get("https://restaurantemintic.herokuapp.com/producto/consulta/" + this.telefono)
                 .then((result) => {
                     self.telefono = result.data.telefono
                     self.nombre = result.data.nombre
@@ -171,7 +171,7 @@ export default {
 
 };
 
-</script>
+</script>-->
 
 <style>
 #Inventario body {
