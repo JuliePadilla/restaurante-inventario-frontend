@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <h1>Carbón de Leña</h1><br><br>
+      <h1>Carbón de Leña</h1><br>
       <h2>Módulo de Inventario</h2>
       <nav>
         <!--<button v-on:click="init" v-if="is_auth" > Inicio </button>
@@ -35,14 +35,35 @@
       <input type="text" id="cantprod" name="cantprod" value="">
       <label for="catprod">categoría:</label>
       <input type="text" id="catprod" name="catprod" value=""><br><br>
-
-      <input type="submit" value="Guardar">
-      <input type="submit" value="Mostrar Lista">
+ 
+      <input type="submit" value="Mostrar Lista de productos">
     </form>
+
+    <table style="width:100%">
+  <tr>
+    <th>Id</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Cantidad</th>
+    <th>Categoría</th>
+  </tr>
+  <tr>
+    <td>CA01</td>
+    <td>Carne asada</td>
+    <td>17000</td>
+    <td>15</td>
+    <td>Carnes</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
   </center>
     </div>
     <div class="footer">
-      <h2>Misión TIC 2022</h2>
+      <h2>Productos</h2>
     </div>
   </div>
 </template>
