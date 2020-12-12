@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header">
-      <img src="./assets/restaurante.jpg" />
+      <!--<img src="./assets/restaurante.jpg" />-->
       <h1>Asados <br />Carbón de Leña</h1>
       <nav>
         <button v-on:click="init" v-if="is_auth">Inicio</button>
@@ -14,7 +14,7 @@
     <div class="main-component">
       <!--<router-view></router-view>-->
 
-      <img src="./assets/lena.jpg" alt="fondo">
+      <!--<img src="./assets/lena1.jpg" alt="fondo">-->
     <center>
       <h2>Módulo de inventario</h2>
      <div style='text-align:left'>
@@ -187,14 +187,12 @@ background: #fcfafa ;
 }
 .footer h2 {
   width: 100%;
-  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer p {
   width: 100%;
-  height: 50%;
   justify-content: center;
   justify-items: center;
   vertical-align: middle;
