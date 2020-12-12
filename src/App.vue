@@ -181,7 +181,7 @@ background: #fcfafa ;
   background-color: #19191a;
   color: #f5a018;
   border-top: 1px solid #f5a018;
-  position: static;
+  position: fixed;
   display: flex;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
