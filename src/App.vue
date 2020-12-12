@@ -16,7 +16,7 @@
 
       <!--<img src="./assets/lena1.jpg" alt="fondo">-->
     <center>
-      <h2>Asados <br />Carbón de Leña</h2><br><br>
+      <h2>Asados <br />Módulo de inventario</h2><br><br>
      <div style='text-align:left'>
       <left>
         <button v-on:click="init" v-if="is_auth" > Crear </button>
@@ -176,7 +176,7 @@ background: #fcfafa ;
   margin: 0;
   padding: 4%;
   width: 100%;
-  height: 50%;
+  height: 20%;
   min-height: 100px;
   background-color: #19191a;
   color: #f5a018;
