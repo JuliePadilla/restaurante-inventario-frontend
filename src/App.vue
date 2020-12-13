@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <div class="header">
-      <!--<img src="./assets/restaurante.jpg" />-->
+      <img src="./assets/restaurante.jpg" />
       <h1>Asados <br />Carbón de Leña</h1>
       <nav>
-        <button v-on:click="init" v-if="is_auth">Inicio</button>
-        <button v-on:click="getCliente" v-if="is_auth">Cliente</button>
-        <button v-on:click="getInventario" v-if="is_auth">Inventario</button>
-        <button v-if="is_auth">Ventas</button>
-        <button v-if="is_auth">Cerrar Sesión</button>
+        <button v-on:click="init">Inicio</button>
+        <button>Cliente</button>
+        <button v-on:click="getInventario">Inventario</button>
+        <button>Ventas</button>
+        <button>Cerrar Sesión</button>
       </nav>
     </div>
     <div class="main-component">
@@ -65,11 +65,11 @@
     <td></td>
   </tr>
 </table>-->
-</div>
+    </div>
     <div class="footer">
       <p>
-        Calle 48 # 27-01. Barrancabermeja, Colombia<br />
-        Teléfonos: +57 323 590 9805 - 6220238 - 6021901<br />
+        Calle 48 # 27-01. Barrancabermeja, Colombia<br>
+        Teléfonos: +57 323 590 9805 - 6220238 - 6021901<br>
         E-mail: carbonlena@hotmail.com
       </p>
     </div>
@@ -113,7 +113,7 @@ beforeCreate: function(){
   body {
     margin: 0 0 0 0;
     background-color: #19191a;
-    /*background-image: url("./assets/carnep.jpg");*/
+    background-image: url("./assets/lena2.jpg");
     background-size: 100%;
     overflow: hidden;
   }
@@ -168,7 +168,8 @@ beforeCreate: function(){
     height: 75vh;
     margin: 0%;
     padding: 0%;
-    background: #fcfafa ;
+    background: rgb(100, 100, 100, 0.5) ;
+    
   } 
 
   .footer {

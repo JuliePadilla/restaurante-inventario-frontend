@@ -9,7 +9,6 @@
                 <button>Eliminar</button>
             </left>
         </div>
-
         <center>
             <form>
                 <label for="idprod">Id producto:</label>
@@ -29,9 +28,8 @@
             
                 <button>Mostrar lista de productos</button><br>
             </form>
-        </center>
 
-        <center>
+        </center>
             <table style="width:100%">
                 <tr>
                     <th>Id</th>
@@ -54,15 +52,15 @@
                 </tr>
             </table>
         </center>
-        
     </div>
-</template>
+<template>
 
 <script>
+
 import axios from "axios";
 export default {
-                name: "Inventario",
-                data: function () {
+    name: "Inventario",
+    data: function () {
         return {
             id: "",
             nombre: "",
@@ -75,22 +73,22 @@ export default {
     methods: {
         init: function () {
         if (this.$route.name != "user") {
-            let username = input.id.getItem("current_username");
-            this.$router.push({ name: "user", params: { username: username }});
+            let username = input.Phone.getItem("current_username");
+            this.$router.push({ name: "user", params: { username: username } });
         }
         },
 
-        findProducto: function () {
-            this.id = document.getElementById("id").value
+        findCliente: function () {
+            this.telefono = document.getElementById("Phone").value
             let self = this
-            axios.get("https://restaurantemintic.herokuapp.com/producto/consulta/" + this.id)
+            axios.get("https://restaurantemintic.herokuapp.com/producto/consulta/" + this.telefono)
                 .then((result) => {
-                    self.id = result.data.id
+                    self.telefono = result.data.telefono
                     self.nombre = result.data.nombre
-                    self.precio = result.data.precio
-                    self.cantidad = result.data.cantidad
-                    self.categoria = result.data.categoria
-                    
+                    self.direccion = result.data.direccion
+                    self.barrio = result.data.barrio
+                    self.cedula = result.data.cedula
+                    self.cumpleanos = result.data.cumpleanos
                     document.getElementById("Phone").value = self.telefono;
                     document.getElementById("name").value = self.nombre;
                     document.getElementById("adress").value = self.direccion
@@ -103,6 +101,7 @@ export default {
                 .catch((error) => {
                     alert("ERROR Servidor");
                 });
+
         },
         makeCliente: function () {
             this.telefono = document.getElementById("Phone").value
@@ -112,7 +111,17 @@ export default {
             this.cedula = document.getElementById("idCC").value
             this.cumpleanos = document.getElementById("birth").value
 
+            /*newCliente = {
+                            "telefono": parseInt(this.telefono, 10),
+                            "nombre": this.nombre,
+                            "direccion": this.direccion,
+                            "barrio": this.barrio,
+                            "cedula": this.cedula,
+                            "cumpleanos": this.cumpleanos
+            };*/    
+
             let self = this
+            //const res = await axios.post('https://httpbin.org/post', { answer: 42 });
             
             axios.post("https://restaurante-back-g1.herokuapp.com/cliente/crear/", {
                             "telefono": parseInt(this.telefono, 10),
@@ -124,6 +133,22 @@ export default {
             })
                 .then((result) => {
                     alert("Cliente Creado");
+                    /*
+                    self.telefono = result.data.telefono
+                    self.nombre = result.data.nombre
+                    self.direccion = result.data.direccion
+                    self.barrio = result.data.barrio
+                    self.cedula = result.data.cedula
+                    self.cumpleanos = result.data.cumpleanos
+                    document.getElementById("Phone").value = self.telefono;
+                    document.getElementById("name").value = self.nombre;
+                    document.getElementById("adress").value = self.direccion
+                    document.getElementById("zone").value = self.barrio
+                    document.getElementById("idCC").value = self.cedula
+                    document.getElementById("birth").value = self.cumpleanos
+                    document.getElementById("11").value = "Se encontro usuario" + self.nombre
+                    */
+                    
                 })
                 .catch((error) => {
                     alert("ERROR Servidor");
@@ -131,7 +156,24 @@ export default {
 
         }
     },
-}
+    /*created: function() {
+
+            this.username = this.$route.params.username
+
+            let self = this
+            axios.get("https://cajero-api2.herokuapp.com/user/balance/" + this.username)
+                .then((result) => {
+                    self.balance = result.data.balance
+                })
+                .catch((error) => {
+                    alert("ERROR Servidor");
+                });
+        }*/
+
+    
+
+};
+
 </script>
 
 <style>
